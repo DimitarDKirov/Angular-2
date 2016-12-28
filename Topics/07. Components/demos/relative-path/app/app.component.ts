@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styles: [`div{
 		background-color: cyan;
-		color: white;
+		color: red;
 	}`]
 })
 export class AppComponent { }

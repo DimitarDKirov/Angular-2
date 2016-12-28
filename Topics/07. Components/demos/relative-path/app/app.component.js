@@ -19,7 +19,7 @@ AppComponent = __decorate([
         moduleId: module.id,
         selector: 'demo-app',
         templateUrl: './app.component.html',
-        styles: ["div{\n\t\tbackground-color: cyan;\n\t\tcolor: white;\n\t}"]
+        styles: ["div{\n\t\tbackground-color: cyan;\n\t\tcolor: red;\n\t}"]
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
