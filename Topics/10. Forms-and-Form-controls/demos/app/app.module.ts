@@ -7,6 +7,7 @@ import { DataService } from './services/data.service';
 import { SuperheroesService } from './services/superheroes.service';
 
 import { AppComponent } from './app.component';
+import { DemoComponent } from './livedemo.component';
 import { SuperheroesComponent } from './components/superheroes/superheroes.component';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { SuperheroesComponent } from './components/superheroes/superheroes.compo
     ],
     declarations: [
         AppComponent,
+        DemoComponent,
         SuperheroFormComponent,
         SuperheroesComponent
     ],

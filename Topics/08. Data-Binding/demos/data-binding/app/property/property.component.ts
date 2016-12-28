@@ -10,6 +10,9 @@ import { Component } from '@angular/core';
 })
 export class PropertyComponent {
     title: string;
-    isEnabled: string = 'disabled';
+    isEnabled: string = 'true';
     myClass: string = 'myClass';
+    getClasses():string[]{
+        return ['myClass', 'testClass'];
+    }
 }

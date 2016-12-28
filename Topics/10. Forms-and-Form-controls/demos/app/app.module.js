@@ -15,6 +15,7 @@ var platform_browser_1 = require('@angular/platform-browser');
 var data_service_1 = require('./services/data.service');
 var superheroes_service_1 = require('./services/superheroes.service');
 var app_component_1 = require('./app.component');
+var livedemo_component_1 = require('./livedemo.component');
 var superheroes_component_1 = require('./components/superheroes/superheroes.component');
 var AppModule = (function () {
     function AppModule() {
@@ -27,6 +28,7 @@ var AppModule = (function () {
             ],
             declarations: [
                 app_component_1.AppComponent,
+                livedemo_component_1.DemoComponent,
                 superhero_form_component_1.SuperheroFormComponent,
                 superheroes_component_1.SuperheroesComponent
             ],

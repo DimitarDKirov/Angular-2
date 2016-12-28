@@ -20,7 +20,7 @@ export class EventComponent {
 
     mouseCoordinates(event: MouseEvent) {
         console.log(event);
-        alert(`X: ${event.x}, Y: ${event.y}`);
+        alert(`X: ${event.pageX}, Y: ${event.pageY}`);
     }
 
     // For custom events
