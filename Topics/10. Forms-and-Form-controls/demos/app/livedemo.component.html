@@ -1,0 +1,11 @@
+<form action="/superhero-create" method="POST" (ngSubmit)="onCreate()" #superheroForm="ngForm">
+    <input type="text" name="name" [(ngModel)]="superhero.name" required pattern="[a-z A-Z]*" #spy #name="ngModel" />
+    <div [hidden]="name.valid || name.pristine">WRONG !</div>
+
+    <input type="text" name="superheroIdentity" [(ngModel)]="superhero.secretIdentity" required pattern="[a-z A-Z]*" #secretIdentity="ngModel"
+    />
+    <div [hidden]="secretIdentity.valid || secretIdentity.pristine">Wrong identity</div>
+    <button [disabled]="!superheroForm.form.valid">Create</button>
+</form>
+<a href="#" (click)="updateName()">Update</a>
+ {{spy.className}}

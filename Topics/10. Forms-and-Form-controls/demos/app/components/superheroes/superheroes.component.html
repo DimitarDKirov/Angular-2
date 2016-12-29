@@ -8,7 +8,7 @@
 </a>
 
 <div [hidden]="!isVisible" class="superhero-form-container">
-    <superhero-form class="superhero-form" (created)="create($event)"></superhero-form>
+    <superhero-form class="superhero-form" (created)="create($event); isVisible=false"></superhero-form>
 </div>
 
 <div *ngIf="superheroes">

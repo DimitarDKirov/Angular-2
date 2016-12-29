@@ -23,6 +23,7 @@ export class SuperheroFormComponent implements OnInit {
     create() {
         let superhero = this.superheroesService.create(this.model.name, this.model.secretIdentity, this.model.img);
         this.emitter.emit(superhero);
+        return false;
     }
 
 };

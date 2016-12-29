@@ -38,6 +38,7 @@ export class AppComponent {
   // }
 
 
+//NOT possible => Error
   // constructor() {
   //   let parent = ReflectiveInjector.resolveAndCreate([Car]);
   //   let child = parent.resolveAndCreateChild([Engine]);

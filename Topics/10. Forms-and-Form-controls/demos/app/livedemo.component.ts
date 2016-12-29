@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
 
 @Component({
+    moduleId:module.id,
     selector: 'live-demo',
-    template: `
-<form action="/superhero-create" method='POST'>
-<input type="text" name="name" [(ngModel)]="superhero.name"/>
-<input type="text" name="superheroIdentity" [(ngModel)]="superhero.secretIdentity"/>
-<button (click)="onCreate()">Create</button>
-</form>
-<a href="#" (click)="updateName()">Update</a>
-{{spy}}
-`
+    templateUrl: './livedemo.component.html',
+    styles: [
+        `input.ng-touched.ng-invalid {
+        border: 2px dotted blue;
+    }
+    input.ng-valid.ng-touched {
+        border: 5px solid green;
+    }`
+    ]
 })
 
 export class DemoComponent {
@@ -18,7 +19,7 @@ export class DemoComponent {
 
     constructor() {
         this.superhero = {
-            name: 'Some name',
+            name: '',
             secretIdentity: 'Identity'
         };
     }
@@ -29,5 +30,9 @@ export class DemoComponent {
 
     updateName() {
         this.superhero.name += new Date();
+    }
+
+    onCreate(ev: any) {
+        console.log(ev);
     }
 }
